@@ -1,0 +1,32 @@
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <ul class="list-group">
+            <li class="list-group-item border-bottom" style="border: 0;">
+                <div class="row justify-content-between">
+                    <h2>Cab Types</h2>
+                    <button type="button" class="btn btn-success" (click)="add=true" *ngIf="!add" >Add Cab Type</button>
+                    <button type="button" class="btn btn-warning" (click)="add=false" *ngIf="add" >Back to List</button>
+                </div>
+            </li>
+            <li class="list-group-item" *ngIf="add">
+                <form (ngSubmit)="addType()" >
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="newCabType" [(ngModel)]="newCabType.cabTypeName" placeholder="Enter Your New Cab Type Here">
+                    </div>
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </li>
+            <li class="list-group-item" *ngFor="let type of cabtype">
+                <div class="row justify-content-between">
+                    {{type.cabTypeName}}
+                    <div>
+                        <a [routerLink]="['/cabtype/edit', type.cabTypeId]" type="button" class="btn btn-warning btn-sm mr-3">Edit</a>
+                        <button type="button" class="btn btn-danger btn-sm" (click)="deleteTypeById(type.cabTypeId)" >Delete</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

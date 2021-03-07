@@ -1,0 +1,127 @@
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <a class="btn btn-success mb-4" [routerLink]="['/booking']">Back to Booking</a>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Email</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.email}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Booking Date</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.bookingDate}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Booking Time</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.bookingTime}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">From</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.fromPlace.placeName}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">To</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.toPlace.placeName}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Pickup Address</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.pickUpAddress}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Landmark</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.landmark}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Pickup Date</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.pickupDate}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">PickUp Time</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.pickupTime}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Cab Type</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.cabType.cabTypeName}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Contact Number</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.contactNo}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Status</span>
+                    </div>
+                    <div class="col-10">
+                        {{bookingDetail.status}}
+                    </div>
+                </div>
+            </li>
+          </ul>
+    </div>
+</div>

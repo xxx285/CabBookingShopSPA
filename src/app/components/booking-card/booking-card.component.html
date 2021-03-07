@@ -1,0 +1,17 @@
+<div class="card mb-4 shadow bg-light" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">From: {{bookingCard.fromPlace.placeName}} </h5>
+        <h5 class="card-title">To: {{bookingCard.toPlace.placeName}} </h5>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Cab Type: {{bookingCard.cabType.cabTypeName}}</li>
+        <li class="list-group-item">Booking Date: {{bookingCard.bookingDate}}</li>
+        <li class="list-group-item">Pickup Date: {{bookingCard.pickupDate}}</li>
+        <li class="list-group-item">Status: {{bookingCard.status}}</li>
+    </ul>
+    <div class="card-body d-flex justify-content-between">
+        <a class="btn btn-success btn-sm col-3" [routerLink]="['/booking/', bookingCard.id]" >Detail</a>
+        <a class="btn btn-warning btn-sm col-3" [routerLink]="['/booking/edit', bookingCard.id]" >Edit</a>
+        <button class="btn btn-danger btn-sm col-3" (click)="deleteBookingById(bookingCard.id)" >Delete</button>
+    </div>
+</div>

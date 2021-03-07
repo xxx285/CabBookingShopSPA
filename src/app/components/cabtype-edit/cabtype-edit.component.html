@@ -1,0 +1,16 @@
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <div class="row justify-content-between col-8">
+            <h5>Old Cab Type Name is: </h5>
+            <h5>{{type.cabTypeName}}</h5>
+        </div>
+        <form (ngSubmit)="updateType()" >
+            <div class="form-group">
+                <input type="text" class="form-control" name="newPlace" [(ngModel)]="updatedType.cabTypeName" placeholder="Enter New Cab Type Name Here">
+            </div>
+            <div class="row justify-content-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

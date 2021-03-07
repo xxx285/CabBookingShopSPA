@@ -1,0 +1,157 @@
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <a class="btn btn-success mb-4" [routerLink]="['/history']">Back to Booking History</a>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Email</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.email}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Booking Date</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.bookingDate}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Booking Time</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.bookingTime}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">From</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.fromPlace.placeName}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">To</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.toPlace.placeName}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Pickup Address</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.pickUpAddress}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Landmark</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.landmark}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Pickup Date</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.pickupDate}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">PickUp Time</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.pickupTime}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Cab Type</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.cabType.cabTypeName}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Contact Number</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.contactNo}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Status</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.status}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Completion Time</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.compTime}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Charge</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.charge}}
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="font-weight-bold">Feedback</span>
+                    </div>
+                    <div class="col-10">
+                        {{historyDetail.feedback}}
+                    </div>
+                </div>
+            </li>
+          </ul>
+    </div>
+</div>

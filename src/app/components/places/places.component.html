@@ -1,0 +1,32 @@
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <ul class="list-group">
+            <li class="list-group-item border-bottom" style="border: 0;">
+                <div class="row justify-content-between">
+                    <h2>Places</h2>
+                    <button type="button" class="btn btn-success" (click)="add=true" *ngIf="!add" >Add Place</button>
+                    <button type="button" class="btn btn-warning" (click)="add=false" *ngIf="add" >Back to List</button>
+                </div>
+            </li>
+            <li class="list-group-item" *ngIf="add">
+                <form (ngSubmit)="addPlace()" >
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="newPlace" [(ngModel)]="newPlace.placeName" placeholder="Enter Your New Place Here">
+                    </div>
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </li>
+            <li class="list-group-item" *ngFor="let place of places">
+                <div class="row justify-content-between">
+                    {{place.placeName}}
+                    <div>
+                        <a [routerLink]="['/places/edit', place.placeId]" type="button" class="btn btn-warning btn-sm mr-3">Edit</a>
+                        <button type="button" class="btn btn-danger btn-sm" (click)="deletePlaceById(place.placeId)" >Delete</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <a class="btn btn-success mb-4" [routerLink]="['/history']">Back to Booking History</a>
+        <form (ngSubmit)="updateHistory()" >
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" [(ngModel)]="history.email">
+            </div>
+            <div class="form-group">
+                <label for="bookingdate">Booking Date</label>
+                <input type="date" class="form-control" name="bookingdate" id="bookingdate" [(ngModel)]="history.bookingDate">
+            </div>
+            <div class="form-group">
+                <label for="bookingtime">Booking Time</label>
+                <input type="time" class="form-control" name="bookingtime" id="bookingtime" [(ngModel)]="history.bookingTime">
+            </div>
+            <div class="form-group">
+                <label for="fromplaceid">From Place Id</label>
+                <input type="number" class="form-control" name="fromplaceid" id="fromplaceid" [(ngModel)]="history.fromPlaceId">
+            </div>
+            <div class="form-group">
+                <label for="toplaceid">To Place Id</label>
+                <input type="number" class="form-control" name="toplaceid" id="toplaceid" [(ngModel)]="history.toPlaceId">
+            </div>
+            <div class="form-group">
+                <label for="pickupaddress">Pickup Address</label>
+                <input type="text" class="form-control" name="pickupaddress" id="pickupaddress" [(ngModel)]="history.pickUpAddress" >
+            </div>
+            <div class="form-group">
+                <label for="landmark">Landmark</label>
+                <input type="text" class="form-control" name="landmark" id="landmark" [(ngModel)]="history.landmark">
+            </div>
+            <div class="form-group">
+                <label for="pickupdate">Pickup Date</label>
+                <input type="date" class="form-control" name="pickupdate" id="pickupdate" [(ngModel)]="history.pickupDate">
+            </div>
+            <div class="form-group">
+                <label for="pickuptime">Pickup Time</label>
+                <input type="time" class="form-control" name="pickuptime" id="pickuptime" [(ngModel)]="history.pickupTime">
+            </div>
+            <div class="form-group">
+                <label for="cabtypeid">Cab Type Id</label>
+                <input type="number" class="form-control" name="cabtypeid" id="cabtypeid" [(ngModel)]="history.cabTypeId">
+            </div>
+            <div class="form-group">
+                <label for="contactNo">Contact Number</label>
+                <input type="text" class="form-control" name="contactNo" id="contactNo" [(ngModel)]="history.contactNo" >
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" class="form-control" name="status" id="status" [(ngModel)]="history.status">
+            </div>
+            <div class="form-group">
+                <label for="compltime">Completion Time</label>
+                <input type="time" class="form-control" name="compltime" id="compltime" [(ngModel)]="history.compTime" >
+            </div>
+            <div class="form-group">
+                <label for="charge">Charge</label>
+                <input type="number" class="form-control" name="charge" id="charge" [(ngModel)]="history.charge" >
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback</label>
+                <input type="text" class="form-control" name="feedback" id="feedback" [(ngModel)]="history.feedback" >
+            </div>
+            <div class="row justify-content-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

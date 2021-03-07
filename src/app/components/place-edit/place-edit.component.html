@@ -1,0 +1,16 @@
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <div class="row justify-content-between col-8">
+            <h5>Old Place Name is: </h5>
+            <h5>{{oldPlace.placeName}}</h5>
+        </div>
+        <form (ngSubmit)="updatePlace()" >
+            <div class="form-group">
+                <input type="text" class="form-control" name="newPlace" [(ngModel)]="updatedPlace.placeName" placeholder="Enter New Place Name Here">
+            </div>
+            <div class="row justify-content-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
