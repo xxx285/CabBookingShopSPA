@@ -23,6 +23,7 @@ import { BookingEditComponent } from './components/booking-edit/booking-edit.com
 import { BookingDetailComponent } from './components/booking-detail/booking-detail.component';
 import { BookingCreateComponent } from './components/booking-create/booking-create.component';
 import { BookingCardComponent } from './components/booking-card/booking-card.component';
+import { BookingCompleteComponent } from './components/booking-complete/booking-complete.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { BookingCardComponent } from './components/booking-card/booking-card.com
     BookingEditComponent,
     BookingDetailComponent,
     BookingCreateComponent,
-    BookingCardComponent
+    BookingCardComponent,
+    BookingCompleteComponent
   ],
   imports: [
     BrowserModule,

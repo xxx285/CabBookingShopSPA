@@ -51,7 +51,8 @@
                 <input type="text" class="form-control" name="status" id="status" [(ngModel)]="booking.status">
             </div>
             <div class="row justify-content-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary mr-3">Submit</button>
+                <a [routerLink]="['/booking/complete', booking.id]" class="btn btn-success ml-3">Complete</a>
             </div>
         </form>
     </div>

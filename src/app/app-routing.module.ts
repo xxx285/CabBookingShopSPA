@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BookingCompleteComponent } from './components/booking-complete/booking-complete.component';
 import { BookingCreateComponent } from './components/booking-create/booking-create.component';
 import { BookingDetailComponent } from './components/booking-detail/booking-detail.component';
 import { BookingEditComponent } from './components/booking-edit/booking-edit.component';
@@ -15,7 +16,7 @@ import { PlaceEditComponent } from './components/place-edit/place-edit.component
 import { PlacesComponent } from './components/places/places.component';
 
 const routes: Routes = [
-  {path: "", component: HistoryListComponent}, // need to be changed
+  {path: "", component: BookingListComponent}, // need to be changed
   {path: "places", component: PlacesComponent},
   {path: "places/edit/:id", component: PlaceEditComponent},
   {path: "cabtype", component: CabtypeListComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: "booking/create", component: BookingCreateComponent},
   {path: "booking/:id", component: BookingDetailComponent},
   {path: "booking/edit/:id", component: BookingEditComponent},
+  {path: "booking/complete/:id", component: BookingCompleteComponent},
   {path: "history", component: HistoryListComponent},
   {path: "history/create", component: HistoryCreateComponent},
   {path: "history/:id", component: HistoryDetailComponent},
