@@ -1,6 +1,6 @@
 # CabBookingShopSPA
 
-This is front end part for CabBookingShop App, check the [backend part here](https://github.com/xxx285/CabBookingShop)
+This is frontend part for CabBookingShop App, check the [backend part here](https://github.com/xxx285/CabBookingShop)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
 
