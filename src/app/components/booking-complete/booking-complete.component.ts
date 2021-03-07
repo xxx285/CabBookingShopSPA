@@ -62,8 +62,11 @@ export class BookingCompleteComponent implements OnInit {
     this.apiService.create("bookinghistory", this.history).subscribe(
       (response) => {
         if (response) {
-          this.apiService.deleteById("bookings", this.booking.id).subscribe()
-          this.route.navigate(['booking']);
+          this.apiService.deleteById("bookings", this.booking.id).subscribe(
+            r => {
+              this.route.navigate(['booking']);
+            }
+          )
         } else {
           this.invalidLogin = true;
         }
